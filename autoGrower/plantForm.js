@@ -35,6 +35,6 @@ form.appendChild(sun);
 form.appendChild(br.cloneNode());
 
 // Append the submit button to the form
-form.appendChild(s);
+form.appendChild(submit);
 
 document.getElementsByTagName("body")[0].appendChild(form);
