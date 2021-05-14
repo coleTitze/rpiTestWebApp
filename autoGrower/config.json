@@ -1,9 +1,1 @@
-{
-  "gardner_info": [
-    {
-      "water_ml": "50",
-      "light_minutes": "10"
-    }
-  ],
-  "light_info": []
-}
+{"waterMl": "6", "lightMinutes": "6"}
