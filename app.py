@@ -13,7 +13,7 @@ def test():
     return render_template('test.html')
 
 
-@app.route('/plantGrower')
+@app.route('/plantGrower', methods=['GET', 'POST'])
 def plantGrower():
     if request.method == 'POST':
         return render_template('plantGrower.html')
