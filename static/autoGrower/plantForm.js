@@ -7,8 +7,7 @@ form.setAttribute("method", "post");
 form.setAttribute("action", "submit.php");
 
 // Create text title
-var waterText = document.createElement("textarea");
-waterText.setAttribute("text", "Water per Day (ml)");
+var waterText = document.createTextNode("Water per Day (ml)");
 
 // Create an input element for Water amount
 var water = document.createElement("input");
