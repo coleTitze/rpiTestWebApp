@@ -5,7 +5,6 @@ $.ajax({
     url: url,
     dataType: 'json',
     success: function(data) { j = data;},
-    async: false
 });
 
 // Create a break line element
