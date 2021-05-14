@@ -1,6 +1,6 @@
 let j = [];
 $(document).ready(function(){
-    $.getJSON("config.json", function(data){
+    $.getJSON("static/config.json", function(data){
         j = data;
     }).fail(function(){
         console.log("An error has occurred.");
