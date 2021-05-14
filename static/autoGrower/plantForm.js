@@ -1,28 +1,31 @@
 // Create a break line element
-var br = document.createElement("br");
+let br = document.createElement("br");
 
 // Create a form
-var form = document.createElement("form");
+let form = document.createElement("form");
 form.setAttribute("method", "post");
 form.setAttribute("action", "submit.php");
 
-// Create text title
-var waterText = document.createTextNode("Water per Day (ml)");
+// Create water text title
+let waterText = document.createTextNode("Water Per Day (ml):");
 
 // Create an input element for Water amount
-var water = document.createElement("input");
+let water = document.createElement("input");
 water.setAttribute("type", "text");
 water.setAttribute("name", "waterAmount");
 water.setAttribute("placeholder", "0");
 
+// Create water text title
+let sunText = document.createTextNode("Light Time In Minutes Per Day:");
+
 // Create an input element for sunlight amount
-var sun = document.createElement("input");
+let sun = document.createElement("input");
 sun.setAttribute("type", "text");
 sun.setAttribute("name", "sunAmount");
 sun.setAttribute("placeholder", "0");
 
 // create a submit button
-var submit = document.createElement("input");
+let submit = document.createElement("input");
 submit.setAttribute("type", "submit");
 submit.setAttribute("value", "Submit");
 
@@ -33,8 +36,11 @@ form.appendChild(water);
 form.appendChild(br.cloneNode());
 
 // Append the sunlight to the form
+form.appendChild(sunText);
+form.appendChild(br.cloneNode());
 form.appendChild(sun);
 form.appendChild(br.cloneNode());
+form.appendChild(document.createElement("p"));
 
 // Append the submit button to the form
 form.appendChild(submit);
