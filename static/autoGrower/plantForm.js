@@ -26,7 +26,8 @@ sun.setAttribute("placeholder", "0");
 
 // create a submit button
 let submit = document.createElement("input");
-submit.setAttribute("type", "submit");
+submit.setAttribute("type", "Submit");
+submit.setAttribute("name", "Submit")
 submit.setAttribute("value", "Submit");
 
 // Append the water input to the form
