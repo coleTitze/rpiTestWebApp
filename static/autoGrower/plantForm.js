@@ -32,7 +32,7 @@ let sunText = document.createTextNode("Light Time In Minutes Per Day:");
 let sun = document.createElement("input");
 sun.setAttribute("type", "text");
 sun.setAttribute("name", "sunAmount");
-sun.setAttribute("placeholder", j['sunMinutes']);
+sun.setAttribute("placeholder", j['lightMinutes']);
 
 // create a submit button
 let submit = document.createElement("input");
