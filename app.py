@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import json
 
 app = Flask(__name__)
 
@@ -16,8 +17,14 @@ def test():
 @app.route('/plantGrower', methods=['GET', 'POST'])
 def plantGrower():
     if request.method == 'POST':
-        outF = open("out.txt", "w")
-        outF.write(str(request.form['sunAmount']))
+        # Create JSON
+        out = {
+            "waterMl": str(request.form['sunAmount']),
+            "light_minutes": str(request.form['waterAmount'])
+        }
+        outJson = json.dumps(out)
+        outF = open("./autoGrower/config.json", "w")
+        outF.write(outJson)
     return render_template('plantGrower.html')
 
 
