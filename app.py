@@ -16,7 +16,9 @@ def test():
 @app.route('/plantGrower', methods=['GET', 'POST'])
 def plantGrower():
     if request.method == 'POST':
-        return render_template('plantGrower.html')
+        if request.form['submitButton'] == "Pressed":
+            outF = open("out.txt", "w")
+            outF.write(str(request.form['sunAmount']))
     return render_template('plantGrower.html')
 
 
