@@ -1,4 +1,4 @@
-let j = [];
+var j = [];
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
         j = data;
