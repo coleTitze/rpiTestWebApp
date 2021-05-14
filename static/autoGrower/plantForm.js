@@ -7,10 +7,6 @@ $.ajax({
     success: function(data) { j = data;},
     async: false
 });
-// Read in config file and create object
-let config = ''
-let obj = JSON.parse(config);
-
 
 // Create a break line element
 let br = document.createElement("br");
