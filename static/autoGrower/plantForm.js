@@ -2,6 +2,7 @@ let j = [];
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
         j = data;
+        console.log(data['waterMl'])
     }).fail(function(){
         console.log("An error has occurred.");
     });
