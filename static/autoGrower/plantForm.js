@@ -34,6 +34,7 @@ form.appendChild(waterText);
 form.appendChild(br.cloneNode());
 form.appendChild(water);
 form.appendChild(br.cloneNode());
+form.appendChild(document.createElement("p"));
 
 // Append the sunlight to the form
 form.appendChild(sunText);
