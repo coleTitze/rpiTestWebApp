@@ -1,10 +1,11 @@
-let url = 'http://192.168.1.4:5000/static/autoGrower/config.json';
-let j = [];
-$.ajax({
-    type: 'GET',
-    url: url,
-    dataType: 'json',
-    success: function(data) { j = data;},
+let j;
+
+$(document).ready(function(){
+    $.getJSON("test.json", function(data){
+        j = data;
+    }).fail(function(){
+        console.log("An error has occurred.");
+    });
 });
 
 // Create a break line element
