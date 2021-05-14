@@ -1,3 +1,18 @@
+$.ajax({
+    url: "../../autoGrower/config.json",
+    dataType: "json",
+    success: function(response) {
+        $.each(response.Users, function(item) {
+            informationArray.push(item);
+        });
+        informationArray.push("success");
+    }
+});
+// Read in config file and create object
+let config = ''
+let obj = JSON.parse(config);
+
+
 // Create a break line element
 let br = document.createElement("br");
 
