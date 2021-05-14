@@ -6,6 +6,10 @@ var form = document.createElement("form");
 form.setAttribute("method", "post");
 form.setAttribute("action", "submit.php");
 
+// Create text title
+var waterText = document.createElement("textarea");
+waterText.setAttribute("text", "Water per Day (ml)");
+
 // Create an input element for Water amount
 var water = document.createElement("input");
 water.setAttribute("type", "text");
@@ -23,9 +27,10 @@ var submit = document.createElement("input");
 submit.setAttribute("type", "submit");
 submit.setAttribute("value", "Submit");
 
-// Append the full name input to the form
+// Append the water input to the form
+form.appendChild(waterText);
+form.appendChild(br.cloneNode());
 form.appendChild(water);
-// Inserting a line break
 form.appendChild(br.cloneNode());
 
 // Append the sunlight to the form
