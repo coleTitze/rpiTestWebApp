@@ -19,14 +19,13 @@ def plantGrower():
     if request.method == 'POST':
         # Create JSON
         out = {
-            "waterMl": str(request.form['sunAmount']),
-            "lightMinutes": str(request.form['waterAmount'])
+            "waterMl": str(request.form['waterAmount']),
+            "lightMinutes": str(request.form['sunAmount'])
         }
         outJson = json.dumps(out)
         outF = open("./autoGrower/config.json", "w")
         outF.write(outJson)
-    else:
-        return render_template('plantGrower.html')
+    return render_template('plantGrower.html')
 
 
 if __name__ == '__main__':
