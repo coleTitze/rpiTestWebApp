@@ -7,6 +7,7 @@ $(document).ready(function(){
         console.log("An error has occurred.");
     });
 });
+console.log(j['waterMl'])
 
 // Create a break line element
 let br = document.createElement("br");
