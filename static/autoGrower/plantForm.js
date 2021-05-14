@@ -1,4 +1,4 @@
-let url = 'http://127.0.0.1:5000/static/autoGrower/config.json';
+let url = 'http://192.168.1.4:5000/static/autoGrower/config.json';
 let j = [];
 $.ajax({
     type: 'GET',
@@ -23,7 +23,7 @@ let waterText = document.createTextNode("Water Per Day (ml):");
 let water = document.createElement("input");
 water.setAttribute("type", "text");
 water.setAttribute("name", "waterAmount");
-water.setAttribute("placeholder", "0");
+water.setAttribute("placeholder", j['waterMl']);
 
 // Create water text title
 let sunText = document.createTextNode("Light Time In Minutes Per Day:");
@@ -32,7 +32,7 @@ let sunText = document.createTextNode("Light Time In Minutes Per Day:");
 let sun = document.createElement("input");
 sun.setAttribute("type", "text");
 sun.setAttribute("name", "sunAmount");
-sun.setAttribute("placeholder", "0");
+sun.setAttribute("placeholder", j['sunMinutes']);
 
 // create a submit button
 let submit = document.createElement("input");
