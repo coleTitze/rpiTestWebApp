@@ -1,6 +1,6 @@
 let j = [];
 $(document).ready(function(){
-    $.getJSON("static/config.json", function(data){
+    $.getJSON("static/autoGrower/config.json", function(data){
         j = data;
     }).fail(function(){
         console.log("An error has occurred.");
