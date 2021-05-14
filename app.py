@@ -16,9 +16,7 @@ def test():
 @app.route('/plantGrower')
 def plantGrower():
     if request.method == 'POST':
-        pass
-        #if request.form['submit'] == 'submit':
-         #   print("Test")
+        return render_template('plantGrower.html')
     return render_template('plantGrower.html')
 
 
