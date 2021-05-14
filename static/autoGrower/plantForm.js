@@ -1,14 +1,11 @@
 // Get current settings from json config
-var j = [];
 $(document).ready(function(){
-    let temp = [];
     $.getJSON("static/autoGrower/config.json", function(data){
-        temp = data;
-        console.log(temp['waterMl'])
+        window.j = data;
+        console.log(j['waterMl'])
     }).fail(function(){
         console.log("An error has occurred.");
     });
-    j = temp;
 });
 console.log(j['waterMl'])
 
