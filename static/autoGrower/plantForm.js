@@ -1,12 +1,11 @@
+let url = 'http://192.168.1.4:5000/autoGrower/config.json';
+let j = [];
 $.ajax({
-    url: "../../autoGrower/config.json",
-    dataType: "json",
-    success: function(response) {
-        $.each(response.Users, function(item) {
-            informationArray.push(item);
-        });
-        informationArray.push("success");
-    }
+    type: 'GET',
+    url: url,
+    dataType: 'json',
+    success: function(data) { j = data;},
+    async: false
 });
 // Read in config file and create object
 let config = ''
