@@ -1,5 +1,5 @@
 // Get current settings from json config
-var j;
+let j = [];
 
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
