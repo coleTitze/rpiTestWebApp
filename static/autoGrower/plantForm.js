@@ -1,5 +1,4 @@
-let j;
-
+let j = [];
 $(document).ready(function(){
     $.getJSON("test.json", function(data){
         j = data;
