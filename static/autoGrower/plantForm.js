@@ -4,7 +4,7 @@ let br = document.createElement("br");
 // Create a form
 let form = document.createElement("form");
 form.setAttribute("method", "post");
-form.setAttribute("action", "submit.php");
+// form.setAttribute("action", "");
 
 // Create water text title
 let waterText = document.createTextNode("Water Per Day (ml):");

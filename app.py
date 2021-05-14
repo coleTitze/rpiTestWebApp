@@ -15,6 +15,8 @@ def test():
 
 @app.route('/plantGrower')
 def plantGrower():
+    if request.method == 'POST':
+        if request.form['submit'] ==
     defaultTxt = "0"
     data = request.form.get('waterInput', defaultTxt)
     return render_template('plantGrower.html')
