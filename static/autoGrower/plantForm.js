@@ -1,4 +1,4 @@
-let url = 'http://192.168.1.4:5000/autoGrower/config.json';
+let url = 'http://192.168.1.4:5000/static/autoGrower/config.json';
 let j = [];
 $.ajax({
     type: 'GET',
