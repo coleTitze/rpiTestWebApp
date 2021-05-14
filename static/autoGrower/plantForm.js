@@ -1,7 +1,7 @@
 // Get current settings from json config
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
-        window.j = data;
+        j = data;
         console.log(j['waterMl'])
     }).fail(function(){
         console.log("An error has occurred.");
