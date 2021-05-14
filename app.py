@@ -23,7 +23,7 @@ def plantGrower():
             "lightMinutes": str(request.form['sunAmount'])
         }
         outJson = json.dumps(out)
-        outF = open("./autoGrower/config.json", "w")
+        outF = open("./static/config.json", "w")
         outF.write(outJson)
     return render_template('plantGrower.html')
 
