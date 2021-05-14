@@ -1,9 +1,7 @@
-var down = document.getElementById("Form");
-
 // Create a break line element
 var br = document.createElement("br");
 
-// Create a form synamically
+// Create a form
 var form = document.createElement("form");
 form.setAttribute("method", "post");
 form.setAttribute("action", "submit.php");
