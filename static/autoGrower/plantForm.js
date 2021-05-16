@@ -32,10 +32,8 @@ submit.setAttribute("value", "Submit");
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
         let j = data;
-        console.log(j['waterMl'])
         sun.setAttribute("placeholder", j['lightMinutes']);
         water.setAttribute("placeholder", j['waterMl']);
-
     }).fail(function(){
         console.log("An error has occurred.");
     });
