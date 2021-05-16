@@ -28,12 +28,13 @@ submit.setAttribute("type", "Submit");
 submit.setAttribute("name", "submitButton")
 submit.setAttribute("value", "Submit");
 
-// Get placeholders
+// Get Current config values
 $(document).ready(function(){
     $.getJSON("static/autoGrower/config.json", function(data){
         let j = data;
         sun.setAttribute("placeholder", j['lightMinutes']);
         water.setAttribute("placeholder", j['waterMl']);
+        console.log(j['waterMl']);
     }).fail(function(){
         console.log("An error has occurred.");
     });
